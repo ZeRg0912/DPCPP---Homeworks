@@ -16,7 +16,7 @@
 
 ------
 
-### [Задание 1](01)
+### Задание 1
 
 Реализуйте класс `SqlSelectQueryBuilder`, который можно использовать для построения
 простых SELECT-запросов.
@@ -41,35 +41,6 @@ int main {
 3. Для простоты строки в запросе могут быть не выделены кавычками, как в примере.
 4. Вызовы `AddFrom` должны перезаписывать название таблицы в классе.
 5. Не забудьте `;` в конце каждого запроса.
-
-------
-
-### [Задание 2](02)
-Расширьте класс из предыдущего задания методом 
-```
-SqlSelectQueryBuilder& AddWhere(const std::map<std::string, std::string>& kv) noexcept;
-```
-С помощью которого можно будет добавить в запрос сразу несколько условий.
-
-Расширьте класс из предыдущего задания методом 
-```
-SqlSelectQueryBuilder& AddColumns(const std::vector<std::string>& columns) noexcept;
-```
-С помощью этого метода можно добавить в запрос сразу несколько полей, по которым он будет строиться вместо одного, как в базовом варианте.
-
----
-
-### [Задание 3 (необязательное)](03)
-Реализуйте потомок класса `SqlSelectQueryBuilder`, который сможет добавлять в условие `FROM` запроса дополнительные операторы «больше» и «меньше».
-Пример кода с таким классом:
-```
-AdvancedSqlSelectQueryBuilder query_builder;
-query_builder.AddColumns({"name", "phone"});
-query_builder.AddFrom("students");
-query_builder.<SomeMethod>(...); // Добавляем условие id > 42
-static_assert(query_builder.BuildQuery(), 
-                "SELECT name, phone FROM students WHERE id>42;");
-```
 
 ------
 

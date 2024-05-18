@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(03)
+set(source_exe 	../../advanced_sql_query_builder.h
+		../../advanced_sql_query_builder.cpp 
+		../../sql_query_builder.h 
+		../../sql_query_builder.cpp
+		main.cpp)
+add_executable(03 ${source_exe})
