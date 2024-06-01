@@ -101,7 +101,7 @@ void saveToAsText(std::ofstream &file, const Printable& printable) {
 }
 ```
 
-### [Задание 1](ErrorCode.cpp)
+### [Задание 1](ErrorCode.txt)
 
 В приведённом выше коде есть нарушения некоторых принципов SOLID.
 
