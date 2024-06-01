@@ -101,7 +101,7 @@ void saveToAsText(std::ofstream &file, const Printable& printable) {
 }
 ```
 
-### [Задание 1](01)
+### [Задание 1](ErrorCode.cpp)
 
 В приведённом выше коде есть нарушения некоторых принципов SOLID.
 
@@ -121,7 +121,7 @@ void saveToAsText(std::ofstream &file, const Printable& printable) {
 
 ------
 
-### [Задание 2](02)
+### [Задание 2](CorrectCode)
 
 Нужно переписать код так, чтобы он соответствовал принципам SOLID. Не бойтесь переименовывать сущности, добавлять новые или удалять старые. 
 
