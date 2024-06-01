@@ -1,0 +1,3 @@
+<html>infoHTML<html/>
+{ "data": "infoJSON"}
+infoText
